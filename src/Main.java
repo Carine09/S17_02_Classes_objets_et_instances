@@ -1,15 +1,11 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Realisatrice maReal= new Realisatrice("Justine", "Triet", 1990);
+        Film filmOne = new Film("Anatomie d'une chute", 2023, maReal);
+        Film.writeSentence(filmOne);
     }
+
+    /* public static void writeSentence(Film myFilm){
+        System.out.print(myFilm.title + ", est sorti en " + myFilm.released_date + ", et réalisé par " + myFilm.realisatrice.firstname + " " + myFilm.realisatrice.lastname + ".");
+    } */
 }
